@@ -141,10 +141,8 @@ public class ListMaker {
         // gets input from user for which item to delete, then subtracts one to get the actual index
         int item = SafeInput.getRangedInt(in, "Select an item to delete, or enter 0 to cancel", 0, list.size()) - 1;
 
-        if (item == -1) { // if they'd like to cancel
-            return;
+        if (item != -1) { // if they did not choose to cancel:
 
-        } else { // otherwise:
             // asks for confirmation
             if (SafeInput.getYNConfirm(in, "Are you sure you'd like to delete list item " + (item + 1) + " (\"" + list.get(item) + "\")?")) {
                 list.remove(item); // deletes the item at that index
