@@ -5,28 +5,6 @@ public class ListMaker {
 
     public static void main(String[] args) {
 
-        /*
-        import java.util.ArrayList; // required for using
-
-        Create a new ArrayList:
-        ArrayList<String> myArrList = new ArrayList<>();  // note the diamond notation on the type parameter <>
-
-        Add and element to the end:
-        myArrlist.add(“Some String”);
-
-        Read an element at location m which is an index just like an array
-        String var = myArrList.get(m);  // again m is the index which is zero based as in the arrays
-
-        Insert an element at location m
-        myArrlist.add(m, “Some String”);  // again m is an index like an array
-
-        How many items does the arrayList hold:
-        myArrList.size();
-
-        Overwrite or replace an item at index m:
-        myArrList.set(m, “New String Value”);
-         */
-
         Scanner in = new Scanner(System.in); // input scanner
         ArrayList<String> list = new ArrayList<>();
         String menuChoice; // stores user input for the options menu
